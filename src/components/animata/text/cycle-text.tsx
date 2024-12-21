@@ -25,7 +25,7 @@ export default function CycleText() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.08 }}
-            className="inline-block text-3xl text-[#ee3a2e]"
+            className="inline-block text-3xl text-[#fa5c44]"
           >
             &quot;{words[index]}&quot;
           </motion.h1>
