@@ -20,7 +20,7 @@ import {
 
 export default function Skills() {
   return (
-    <div className="bg-[#fe76b4] text-white p-6 rounded-3xl shadow-lg hover:scale-[1.01]">
+    <div className="bg-[#3d1900] text-white p-6 rounded-3xl shadow-lg hover:scale-[1.01]">
       <h2 className="text-3xl font-bold mb-10">Skills</h2>
       <div className="flex flex-wrap gap-6 justify-center items-center">
         <div className="flex items-center space-x-2">

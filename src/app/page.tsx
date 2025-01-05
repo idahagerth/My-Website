@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-white min-h-screen p-8 mt-14">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-5">
-        <div className="h-[600px] md:h-[550px] bg-[#fbfbfb] p-8 rounded-3xl shadow-lg justify-center md:col-span-8 transition-all hover:scale-[1.01]">
+        <div className="h-[600px] md:h-[550px] bg-[#fcfbf5] p-8 rounded-3xl shadow-lg justify-center md:col-span-8 transition-all hover:scale-[1.01]">
           <h1 className="text-2xl md:text-4xl font-bold mb-4 text-stone-800">
             <CycleText /> I’m Ida, a frontend developer with a deep passion
             <br /> for colors and design.

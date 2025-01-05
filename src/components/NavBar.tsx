@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useRef, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
   const lastScrollY = useRef(0);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,25 +35,36 @@ export function Navbar() {
           <Link href="/" className="font-bold text-xl"></Link>
 
           <div className="flex space-x-4 sm:space-x-8">
-            <Link
-              target="_blank"
-              href="https://github.com/idahagerth"
-              className="text-stone-800 transition-all hover:scale-110 active:scale-95"
-            >
-              Github
-            </Link>
-            <Link
-              href="/projects"
-              className="text-stone-800 transition-all hover:scale-110 active:scale-95"
-            >
-              Projects
-            </Link>
-            <Link
-              href="#contact"
-              className="text-stone-800 transition-all hover:scale-110 active:scale-95"
-            >
-              Contact
-            </Link>
+            {pathname === "/projects" ? (
+              <Link
+                href="/"
+                className="text-stone-800 transition-all hover:scale-110 active:scale-95"
+              >
+                ← Home
+              </Link>
+            ) : (
+              <>
+                <Link
+                  target="_blank"
+                  href="https://github.com/idahagerth"
+                  className="text-stone-800 transition-all hover:scale-110 active:scale-95"
+                >
+                  Github
+                </Link>
+                <Link
+                  href="/projects"
+                  className="text-stone-800 transition-all hover:scale-110 active:scale-95"
+                >
+                  Projects
+                </Link>
+                <Link
+                  href="#contact"
+                  className="text-stone-800 transition-all hover:scale-110 active:scale-95"
+                >
+                  Contact
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>

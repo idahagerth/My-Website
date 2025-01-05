@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="bg-[#232122] text-white p-6 rounded-3xl shadow-lg md:col-span-4 hover:scale-[1.01]">
+    <div className="bg-[#000000] text-white p-6 rounded-3xl shadow-lg md:col-span-4 hover:scale-[1.01]">
       <h2 className="text-3xl font-bold mb-2">About</h2>
       <ul className="space-y-6 text-lg pt-4">
         <li>
