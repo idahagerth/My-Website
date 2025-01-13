@@ -42,6 +42,21 @@ export function Navbar() {
               >
                 ← Home
               </Link>
+            ) : pathname.startsWith("/projects/") ? (
+              <>
+                <Link
+                  href="/"
+                  className="text-stone-800 transition-all hover:scale-110 active:scale-95"
+                >
+                  ← Home
+                </Link>
+                <Link
+                  href="/projects"
+                  className="text-stone-800 transition-all hover:scale-110 active:scale-95"
+                >
+                  ← Projects
+                </Link>
+              </>
             ) : (
               <>
                 <Link
