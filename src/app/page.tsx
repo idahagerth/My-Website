@@ -3,6 +3,8 @@ import Skills from "@/components/Skills";
 import Link from "next/link";
 import About from "@/components/About";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <div className="bg-white min-h-screen p-8 mt-14">
