@@ -12,10 +12,11 @@ export function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY.current) {
+      
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
         setIsScrollingDown(true);
-      } else {
+      } else if (currentScrollY < lastScrollY.current) {
+      
         setIsScrollingDown(false);
       }
       lastScrollY.current = currentScrollY;

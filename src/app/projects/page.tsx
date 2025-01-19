@@ -70,7 +70,7 @@ export default function Projects() {
             >
               <div className="relative h-full w-full">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative rounded-[2.5rem] overflow-hidden w-[71%] sm:w-[71%] md:w-[71%]">
+                  <div className="relative rounded-[2.5rem] overflow-hidden w-[71%] sm:w-[71%] md:w-[71%] mb-8 sm:mb-0">
                     {project.title === "Under development" ? (
                       <p className="text-white text-center font-bold ">
                         under development
